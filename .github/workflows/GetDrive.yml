@@ -15,10 +15,6 @@ jobs:
         Invoke-WebRequest https://raw.githubusercontent.com/LEE-ai116/AdityaRDP08/main/wallpaper.png -OutFile wallpaper.png
         Invoke-WebRequest https://raw.githubusercontent.com/GetDrive/vps/main/wallpaper.bat -OutFile wallpaper.bat
         Invoke-WebRequest https://raw.githubusercontent.com/GetDrive/vps/main/loop.bat -OutFile loop.bat
-    - name: Download Launcher.
-      run: |
-        Invoke-WebRequest https://raw.githubusercontent.com/GetDrive/vps/main/launcher/Node.js.lnk -OutFile Node.js.lnk
-        Invoke-WebRequest https://raw.githubusercontent.com/GetDrive/vps/main/launcher/Visual%20Studio%202019.lnk -OutFile "Visual Studio 2019.lnk"
     - name: Extract Ngrok File.
       run: Expand-Archive ngrok.zip
     - name: Connect to Ngrok.
